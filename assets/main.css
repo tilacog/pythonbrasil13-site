@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: flex;
+  position: relative;
+  min-height: 768px;
+  justify-content: center;
+}
+.main::after {
+  content: '';
+  background: url('python-logo-dark.png') no-repeat center;
+  background-size: 300px;
+  opacity: .1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+.content {
+  margin: auto 0;
+}
+.title {
+  font-family: 'Bree Serif', serif;
+  font-size: 5rem;
+  color: #ffd966;
+  margin: 15px 0 10px;
+}
+.title span {
+  color: #6d9eeb;
+}
+.subtitle {
+  font-family: 'Courier New', Courier;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+.links {
+  font-family: 'Courier New', Courier;
+  padding: 0;
+  text-align: center;
+  margin-top: 28px;
+}
+.links li {
+  display: inline-block;
+}
+.links li::after {
+  content: '<>';
+  margin-left: 5px;
+  font-size: .6rem;
+}
+.links li:last-child::after {
+  content: "";
+}
+.links li a {
+  color: #6d9eeb;
+  cursor: pointer;
+  text-decoration: none;
+}
